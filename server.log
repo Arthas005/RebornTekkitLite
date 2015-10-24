@@ -513,3 +513,4 @@ Caused by: java.io.FileNotFoundException: .\world\chickenchunks\loginTimes.dat (
 2015-10-24 05:07:56 [INFO] 1.4.5-R0.2
 2015-10-24 05:07:57 [FINE] Aborting ItemSpawnBL read, itemDB not yet loaded.
 2015-10-24 05:07:57 [INFO] Essentials: Using PermissionsEx based permissions.
+2015-10-24 18:58:47 [INFO] Starting minecraft server version 1.4.7
