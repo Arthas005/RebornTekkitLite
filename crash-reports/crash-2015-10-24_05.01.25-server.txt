@@ -1,0 +1,127 @@
+---- Minecraft Crash Report ----
+// I'm sorry, Dave.
+
+Time: 10/24/15 5:01 AM
+Description: Exception in server tick loop
+
+java.lang.RuntimeException: Error while saving login times
+	at cpw.mods.fml.server.FMLServerHandler.haltGame(FMLServerHandler.java:102)
+	at cpw.mods.fml.common.FMLCommonHandler.raiseException(FMLCommonHandler.java:196)
+	at codechicken.chunkloader.ChunkLoaderManager.updateLoginTimes(ChunkLoaderManager.java:882)
+	at codechicken.chunkloader.ChunkLoaderManager.tickEnd(ChunkLoaderManager.java:850)
+	at codechicken.chunkloader.ChunkLoaderEventHandler.tickEnd(ChunkLoaderEventHandler.java:39)
+	at cpw.mods.fml.common.SingleIntervalHandler.tickEnd(SingleIntervalHandler.java:22)
+	at cpw.mods.fml.common.FMLCommonHandler.tickEnd(FMLCommonHandler.java:139)
+	at cpw.mods.fml.common.FMLCommonHandler.onPostWorldTick(FMLCommonHandler.java:283)
+	at net.minecraft.server.MinecraftServer.r(MinecraftServer.java:689)
+	at ho.r(DedicatedServer.java:269)
+	at net.minecraft.server.MinecraftServer.q(MinecraftServer.java:599)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:497)
+	at fy.run(SourceFile:849)
+Caused by: java.io.FileNotFoundException: .\world\chickenchunks\loginTimes.dat (The requested operation cannot be performed on a file with a user-mapped section open)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at codechicken.chunkloader.ChunkLoaderManager.updateLoginTimes(ChunkLoaderManager.java:871)
+	... 10 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_67, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1801681048 bytes (1718 MB) / 2020081664 bytes (1926 MB) up to 2863661056 bytes (2731 MB)
+	JVM Flags: 2 total; -Xmx3G -Xms2G
+	AABB Pool Size: 3997 (223832 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: FML and Forge are installed
+	IntCache: cache: 0, tcache: 0, allocated: 1, tallocated: 63
+	FML: MCP v7.26a FML v4.7.35.556 Minecraft Forge 6.6.2.534 77 mods loaded, 77 mods active
+	mcp [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML [Forge Mod Loader] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge [Minecraft Forge] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CodeChickenCore [CodeChicken Core] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NotEnoughItems [Not Enough Items] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	PowerCrystalsCore [PowerCrystals Core] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	mod_bspkrsCore [bspkrsCore] ([1.4.7]bspkrsCorev2.02.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	TreeCapitator [TreeCapitator] ([1.4.6]TreeCapitator.Forge.1.4.6.r07.Uni.CoreMod.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BukkitForge [BukkitForge] (BukkitForge-1.4.7-40.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BlockBreak [Block Break Event] (BukkitForge-1.4.7-40.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Core [BuildCraft] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Factory [BC Factory] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Transport [BC Transport] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Silicon [BC Silicon] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	APUnofficial [Additional Pipes] (AdditionalPipes2.1.3u42-BC3.4.2-MC1.4.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CoFHCore [CoFH Core] (CoFHCore-1.4.7.3.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ComputerCraft [ComputerCraft] (ComputerCraft1.5.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CCTurtle [ComputerCraft Turtles] (ComputerCraft1.5.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ThermalExpansion [Thermal Expansion] (ThermalExpansion-2.2.2.2.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OmniTools [OmniTools] (OmniTools-3.0.4.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	IC2 [IndustrialCraft 2] (industrialcraft-2_1.115.231-lf.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ImmibisCore [Immibis Core] (immibis-core-52.4.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AdvancedRepulsionSystems [Advanced Repulsion Systems] (adv-repulsion-systems-52.0.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AdvancedMachines [IC2 Advanced Machines Addon] (AdvancedMachines_1.4.6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AdvancedPowerManagement [Advanced Power Management] (AdvancedPowerManagement-1.1.55-IC2_1.112.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AppliedEnergistics [Applied Energistics] (appeng-rv9-i.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Builders [BC Builders] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Energy [BC Energy] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ChickenChunks [ChickenChunks] (ChickenChunks 1.3.1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CompactSolars [Compact Solar Arrays] (compactsolars-universal-1.4.7-4.0.3.29.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	DimensionalAnchors [Dimensional Anchors] (dimensional-anchor-52.2.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	DimensionalDoors [Dimensional Doors] (DimensionalDoors-1.4.7 v1.3.2.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	EE3 [Equivalent Exchange 3] (ee3-universal-pre1f.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	EnderStorage [EnderStorage] (EnderStorage 1.4.1.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	factorization [Factorization] (Factorization-0.7.21.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	factorization.misc [Factorization Miscellaneous Nonsense] (Factorization-0.7.21.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	factorization.dimensionalSlice [Factorization Dimensional Slices] (Factorization-0.7.21.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FlatBedrock [FlatBedrock] (FlatBedrock_1.0.3.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	IC2NuclearControl [Nuclear Control] (IC2NuclearControl-1.4.6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	IronChest [Iron Chest] (ironchest-universal-1.4.7-5.1.0.275.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ThermalExpansion|Factory [Factory] (ThermalExpansion-2.2.2.2.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ThermalExpansion|Energy [Energy] (ThermalExpansion-2.2.2.2.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ThermalExpansion|Transport [Transport] (ThermalExpansion-2.2.2.2.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	LogisticsPipes|Main [Logistics Pipes] (LogisticsPipes-MC1.4.7-0.7.0.96.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded [Minefactory Reloaded] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatExtraBiomes [MFR Compat: ExtraBiomes] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatForestry [MFR Compat: Forestry] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatIC2 [MFR Compat: IC2] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatPams [MFR Compat: Pam's Mods] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedPowerCore [RedPower] (RedPowerCore-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedPowerBase [RP Base] (RedPowerCore-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedPowerWorld [RP World] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatRP2 [MFR Compat: RP2] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatSoulShards [MFR Compat: Soul Shards] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatSufficientBiomes [MFR Compat: Sufficient Biomes] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatThaumcraft [MFR Compat: Thaumcraft] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatTwilightForest [MFR Compat: TwilightForest] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatVanilla [MFR Compat: Vanilla] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MFReloaded|CompatXyCraft [MFR Compat: XyCraft] (MineFactoryReloaded-2.3.2-287.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	mmmPowersuits [MachineMuse's Modular Powersuits] (ModularPowersuits-0.3.2-199.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Mystcraft [Mystcraft] (mystcraft-uni-1.4.7-0.10.1.00.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NEIPlugins [NEI Plugins] (nei_plugins-1.0.4.5a.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NetherOres [Nether Ores] (NetherOres-2.0.6-32.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OCS [OpenCCSensors] (OpenCCSensors-0.1.4b.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	PowerConverters [Power Converters] (PowerConverters-2.2.2-29.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedPowerMachine [RP Machine] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedPowerCompat [RP Compat] (RedPowerCompat-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedPowerWiring [RP Wiring] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedPowerLogic [RP Logic] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedPowerLighting [RP Lighting] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedPowerControl [RP Control] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	StevesCarts [Steve's Carts] (StevesCarts2.0.0.a62.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Tubestuff [Tubestuff] (tubestuff-52.3.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	weaponmod [Balkon's WeaponMod] (Weaponmod.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	WR-CBE|Core [WR-CBE Core] (WR-CBE Core 1.3.2.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	WR-CBE|Addons [WR-CBE Addons] (WR-CBE Addons 1.3.2.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	WR-CBE|RedPower [WR-CBE RedPower] (WR-CBE RedPower 1.3.2.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BukkitForge Details: 1.4.6 (Bukkit API version 1.4.5-R0.2)
+Plugins Loaded:ClearLag v2.8.3: Enabled, WorldEdit v5.6.3: Enabled, PermissionsEx v1.20.4: Enabled, Multiverse-Core v2.4-b527: Enabled, Multiverse-Portals v2.4-b548: Enabled, Essentials v2.12.2: Enabled, EssentialsProtect v2.12.2: Enabled, EssentialsSpawn v2.12.2: Enabled and EssentialsAntiBuild v2.12.2: Enabled
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 3045 (170520 bytes; 0 MB) allocated, 2090 (117040 bytes; 0 MB) used
+	Player Count: 1 / 20; [iq['Mr_Legacy005'/351, l='world', x=223.76, y=81.02, z=252.62]]
+	Is Modded: Definitely; Server brand changed to 'forge,fml'
+	Type: Dedicated Server (map_server.txt)

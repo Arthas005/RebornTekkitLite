@@ -1,0 +1,515 @@
+2015-10-24 04:22:37 [INFO] Starting minecraft server version 1.4.7
+2015-10-24 04:22:44 [INFO] Loading properties
+2015-10-24 04:22:44 [INFO] Default game type: SURVIVAL
+2015-10-24 04:22:44 [INFO] Generating keypair
+2015-10-24 04:22:44 [INFO] Starting Minecraft server on 192.168.1.100:25565
+2015-10-24 04:22:47 [WARNING] Failed to load operators list: java.io.FileNotFoundException: .\ops.txt (The system cannot find the file specified)
+2015-10-24 04:22:47 [WARNING] Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (The system cannot find the file specified)
+2015-10-24 04:22:47 [INFO] Preparing level "world"
+2015-10-24 04:22:48 [INFO] Preparing start region for level 0
+2015-10-24 04:22:49 [INFO] Preparing spawn area: 10%
+2015-10-24 04:22:50 [INFO] Preparing spawn area: 31%
+2015-10-24 04:22:51 [INFO] Preparing spawn area: 51%
+2015-10-24 04:22:52 [INFO] Preparing spawn area: 70%
+2015-10-24 04:22:53 [INFO] Preparing spawn area: 90%
+2015-10-24 04:22:54 [INFO] Done (6.047s)! For help, type "help" or "?"
+2015-10-24 04:22:54 [SEVERE] Encountered an unexpected exception RuntimeException
+java.lang.RuntimeException: Error while saving login times
+	at cpw.mods.fml.server.FMLServerHandler.haltGame(FMLServerHandler.java:102)
+	at cpw.mods.fml.common.FMLCommonHandler.raiseException(FMLCommonHandler.java:196)
+	at codechicken.chunkloader.ChunkLoaderManager.updateLoginTimes(ChunkLoaderManager.java:882)
+	at codechicken.chunkloader.ChunkLoaderManager.tickEnd(ChunkLoaderManager.java:850)
+	at codechicken.chunkloader.ChunkLoaderEventHandler.tickEnd(ChunkLoaderEventHandler.java:39)
+	at cpw.mods.fml.common.SingleIntervalHandler.tickEnd(SingleIntervalHandler.java:22)
+	at cpw.mods.fml.common.FMLCommonHandler.tickEnd(FMLCommonHandler.java:139)
+	at cpw.mods.fml.common.FMLCommonHandler.onPostWorldTick(FMLCommonHandler.java:283)
+	at net.minecraft.server.MinecraftServer.r(MinecraftServer.java:689)
+	at ho.r(DedicatedServer.java:269)
+	at net.minecraft.server.MinecraftServer.q(MinecraftServer.java:599)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:497)
+	at fy.run(SourceFile:849)
+Caused by: java.io.FileNotFoundException: .\world\chickenchunks\loginTimes.dat (The requested operation cannot be performed on a file with a user-mapped section open)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at codechicken.chunkloader.ChunkLoaderManager.updateLoginTimes(ChunkLoaderManager.java:871)
+	... 10 more
+2015-10-24 04:22:54 [SEVERE] This crash report has been saved to: C:\Users\seth\Desktop\test server\.\crash-reports\crash-2015-10-24_04.22.54-server.txt
+2015-10-24 04:23:59 [INFO] Unknown command. Try /help for a list of commands.
+2015-10-24 04:24:02 [INFO] --- Showing help page 1 of 8 (/help <page>) ---
+2015-10-24 04:24:02 [INFO] /ban <name> [reason ...]
+2015-10-24 04:24:02 [INFO] /ban-ip <address|name> [reason ...]
+2015-10-24 04:24:02 [INFO] /banlist [ips|players]
+2015-10-24 04:24:02 [INFO] /buildcraft help
+2015-10-24 04:24:02 [INFO] /ccdebug help
+2015-10-24 04:24:02 [INFO] /clear <player> [item] [data]
+2015-10-24 04:24:02 [INFO] /cofh
+2015-10-24 04:24:06 [INFO] Unknown command. Try /help for a list of commands.
+2015-10-24 04:24:08 [INFO] --- Showing help page 2 of 8 (/help <page>) ---
+2015-10-24 04:24:08 [INFO] /debug
+2015-10-24 04:24:08 [INFO] /defaultgamemode <mode>
+2015-10-24 04:24:08 [INFO] /delete_all_links
+2015-10-24 04:24:08 [INFO] /delete_dim_data
+2015-10-24 04:24:08 [INFO] /delete_rifts
+2015-10-24 04:24:08 [INFO] /deop <player>
+2015-10-24 04:24:08 [INFO] /difficulty <new difficulty>
+2015-10-24 04:24:10 [INFO] --- Showing help page 3 of 8 (/help <page>) ---
+2015-10-24 04:24:10 [INFO] /dimanc
+2015-10-24 04:24:10 [INFO] /ee3
+2015-10-24 04:24:10 [INFO] /enchant <player> <enchantment ID> [level]
+2015-10-24 04:24:10 [INFO] /freq help
+2015-10-24 04:24:10 [INFO] /gamemode <mode> [player]
+2015-10-24 04:24:10 [INFO] /gamerule <rule name> <value> OR /gamerule <rule name>
+2015-10-24 04:24:10 [INFO] /give <player> <item> [amount] [data]
+2015-10-24 04:24:12 [INFO] --- Showing help page 4 of 8 (/help <page>) ---
+2015-10-24 04:24:12 [INFO] /help [page|command name]
+2015-10-24 04:24:12 [INFO] /kick <player> [reason ...]
+2015-10-24 04:24:12 [INFO] /kill
+2015-10-24 04:24:12 [INFO] /list
+2015-10-24 04:24:12 [INFO] /logisticspipes help
+2015-10-24 04:24:12 [INFO] /me <action ...>
+2015-10-24 04:24:12 [INFO] /myst-agebook [dimId]
+2015-10-24 04:24:15 [INFO] --- Showing help page 5 of 8 (/help <page>) ---
+2015-10-24 04:24:15 [INFO] /myst-create dimId
+2015-10-24 04:24:15 [INFO] /myst-permissions <PlayerName> <restrict|permit> <entry|depart> <all|dimId>
+2015-10-24 04:24:15 [INFO] /myst-toggleworldinstability [dimId] [true|false]
+2015-10-24 04:24:15 [INFO] /op <player>
+2015-10-24 04:24:15 [INFO] /pardon <name>
+2015-10-24 04:24:15 [INFO] /pardon-ip <address>
+2015-10-24 04:24:15 [INFO] /prune_pocket_dims
+2015-10-24 04:24:18 [INFO] Unknown command. Try /help for a list of commands.
+2015-10-24 04:24:20 [INFO] --- Showing help page 5 of 8 (/help <page>) ---
+2015-10-24 04:24:20 [INFO] /myst-create dimId
+2015-10-24 04:24:20 [INFO] /myst-permissions <PlayerName> <restrict|permit> <entry|depart> <all|dimId>
+2015-10-24 04:24:20 [INFO] /myst-toggleworldinstability [dimId] [true|false]
+2015-10-24 04:24:20 [INFO] /op <player>
+2015-10-24 04:24:20 [INFO] /pardon <name>
+2015-10-24 04:24:20 [INFO] /pardon-ip <address>
+2015-10-24 04:24:20 [INFO] /prune_pocket_dims
+2015-10-24 04:24:22 [INFO] --- Showing help page 6 of 8 (/help <page>) ---
+2015-10-24 04:24:22 [INFO] /save-all
+2015-10-24 04:24:22 [INFO] /save-off
+2015-10-24 04:24:22 [INFO] /save-on
+2015-10-24 04:24:22 [INFO] /say <message ...>
+2015-10-24 04:24:22 [INFO] /seed
+2015-10-24 04:24:22 [INFO] /spawnpoint OR /spawnpoint <player> OR /spawnpoint <player> <x> <y> <z>
+2015-10-24 04:24:22 [INFO] /stop
+2015-10-24 04:27:02 [INFO] Stopping the server
+2015-10-24 04:27:02 [INFO] Stopping server
+2015-10-24 04:27:02 [INFO] Saving players
+2015-10-24 04:27:02 [INFO] Saving worlds
+2015-10-24 04:27:02 [INFO] Saving chunks for level 'world'/Overworld
+2015-10-24 04:27:07 [INFO] Saving chunks for level 'world'/Nether
+2015-10-24 04:27:07 [INFO] Saving chunks for level 'world'/The End
+2015-10-24 04:27:07 [INFO] Saving chunks for level 'world'/Limbo
+2015-10-24 04:32:51 [INFO] Starting minecraft server version 1.4.7
+2015-10-24 04:32:58 [INFO] Loading properties
+2015-10-24 04:32:58 [INFO] Default game type: SURVIVAL
+2015-10-24 04:32:58 [INFO] Generating keypair
+2015-10-24 04:32:59 [INFO] Starting Minecraft server on 192.168.1.100:25565
+2015-10-24 04:33:02 [INFO] Preparing level "world"
+2015-10-24 04:33:02 [INFO] Preparing start region for level 0
+2015-10-24 04:33:03 [INFO] Done (1.349s)! For help, type "help" or "?"
+2015-10-24 04:34:37 [INFO] Bukkit version format changed. Version not checked.
+2015-10-24 04:34:37 [INFO] git-BukkitForge-1.4.5-R1.0-b3000 jnks (Really: BukkitForge for MC 1.4.7)
+2015-10-24 04:34:37 [INFO] 1.4.5-R0.2
+2015-10-24 04:34:37 [INFO] Creating config from template: C:\Users\seth\Desktop\test server\.\plugins\Essentials\config.yml
+2015-10-24 04:34:37 [FINE] Aborting ItemSpawnBL read, itemDB not yet loaded.
+2015-10-24 04:34:37 [INFO] Creating empty config: C:\Users\seth\Desktop\test server\.\plugins\Essentials\upgrades-done.yml
+2015-10-24 04:34:37 [INFO] Creating config from template: C:\Users\seth\Desktop\test server\.\plugins\Essentials\worth.yml
+2015-10-24 04:34:38 [INFO] Essentials: Using config file enhanced permissions.
+2015-10-24 04:34:38 [INFO] Permissions listed in as player-commands will be given to all users.
+2015-10-24 04:37:24 [INFO] User Mr_Legacy005 connecting with mods [OCS, MFReloaded|CompatSufficientBiomes, factorization.misc, RedPowerWiring, OmniTools, BuildCraft|Transport, RedPowerCompat, AdvancedPowerManagement, WR-CBE|Core, MFReloaded|CompatIC2, factorization.dimensionalSlice, RedPowerLogic, ThermalExpansion|Energy, WR-CBE|RedPower, EnderStorage, AdvancedMachines, MFReloaded|CompatPams, mmmPowersuits, IronChest, MFReloaded|CompatRP2, BuildCraft|Energy, EE3, ImmibisCore, LogisticsPipes|Main, DimensionalDoors, ChickenChunks, factorization, RedPowerLighting, AppliedEnergistics, mod_bspkrsCore, RedPowerBase, MFReloaded|CompatExtraBiomes, MFReloaded, ThermalExpansion, NetherOres, weaponmod, BuildCraft|Silicon, APUnofficial, ThermalExpansion|Transport, BuildCraft|Core, IC2NuclearControl, ThermalExpansion|Factory, CompactSolars, MFReloaded|CompatForestry, DimensionalAnchors, IC2, StevesCarts, Mystcraft, WR-CBE|Addons, ComputerCraft, TreeCapitator, BuildCraft|Factory, RedPowerMachine, RedPowerCore, MFReloaded|CompatThaumcraft, CCTurtle, AdvancedRepulsionSystems, Tubestuff, RedPowerControl, MFReloaded|CompatTwilightForest, MFReloaded|CompatSoulShards, MFReloaded|CompatVanilla, RedPowerWorld, BuildCraft|Builders, MFReloaded|CompatXyCraft, PowerConverters]
+2015-10-24 04:37:24 [INFO] Mr_Legacy005[/192.168.1.100:61635] logged in with entity id 7235 at (232.5, 69.62000000476837, 247.5)
+2015-10-24 04:37:25 [INFO] Creating empty config: C:\Users\seth\Desktop\test server\.\plugins\Essentials\userdata\mr_legacy005.yml
+2015-10-24 04:37:25 [WARNING] File motd.txt does not exist. Creating one for you.
+2015-10-24 04:37:38 [INFO] Opped mr_legacy005
+2015-10-24 04:38:02 [INFO] Stopping the server
+2015-10-24 04:38:02 [INFO] Stopping server
+2015-10-24 04:38:02 [INFO] Saving players
+2015-10-24 04:38:02 [INFO] Saving worlds
+2015-10-24 04:38:02 [INFO] Saving chunks for level 'world'/Overworld
+2015-10-24 04:38:02 [INFO] Saving chunks for level 'world'/Nether
+2015-10-24 04:38:03 [INFO] Stopping server
+2015-10-24 04:38:11 [INFO] Starting minecraft server version 1.4.7
+2015-10-24 04:38:19 [INFO] Loading properties
+2015-10-24 04:38:19 [INFO] Default game type: SURVIVAL
+2015-10-24 04:38:19 [INFO] Generating keypair
+2015-10-24 04:38:20 [INFO] Starting Minecraft server on 192.168.1.100:25565
+2015-10-24 04:38:23 [INFO] Preparing level "world"
+2015-10-24 04:38:24 [INFO] Preparing start region for level 0
+2015-10-24 04:38:24 [INFO] Done (1.062s)! For help, type "help" or "?"
+2015-10-24 04:38:26 [INFO] Bukkit version format changed. Version not checked.
+2015-10-24 04:38:26 [INFO] git-BukkitForge-1.4.5-R1.0-b3000 jnks (Really: BukkitForge for MC 1.4.7)
+2015-10-24 04:38:26 [INFO] 1.4.5-R0.2
+2015-10-24 04:38:26 [FINE] Aborting ItemSpawnBL read, itemDB not yet loaded.
+2015-10-24 04:38:27 [INFO] Essentials: Using config file enhanced permissions.
+2015-10-24 04:38:27 [INFO] Permissions listed in as player-commands will be given to all users.
+2015-10-24 04:38:50 [INFO] User Mr_Legacy005 connecting with mods [OCS, MFReloaded|CompatSufficientBiomes, factorization.misc, RedPowerWiring, OmniTools, BuildCraft|Transport, RedPowerCompat, AdvancedPowerManagement, WR-CBE|Core, MFReloaded|CompatIC2, factorization.dimensionalSlice, RedPowerLogic, ThermalExpansion|Energy, WR-CBE|RedPower, EnderStorage, AdvancedMachines, MFReloaded|CompatPams, mmmPowersuits, IronChest, MFReloaded|CompatRP2, BuildCraft|Energy, EE3, ImmibisCore, LogisticsPipes|Main, DimensionalDoors, ChickenChunks, factorization, RedPowerLighting, AppliedEnergistics, mod_bspkrsCore, RedPowerBase, MFReloaded|CompatExtraBiomes, MFReloaded, ThermalExpansion, NetherOres, weaponmod, BuildCraft|Silicon, APUnofficial, ThermalExpansion|Transport, BuildCraft|Core, IC2NuclearControl, ThermalExpansion|Factory, CompactSolars, MFReloaded|CompatForestry, DimensionalAnchors, IC2, StevesCarts, Mystcraft, WR-CBE|Addons, ComputerCraft, TreeCapitator, BuildCraft|Factory, RedPowerMachine, RedPowerCore, MFReloaded|CompatThaumcraft, CCTurtle, AdvancedRepulsionSystems, Tubestuff, RedPowerControl, MFReloaded|CompatTwilightForest, MFReloaded|CompatSoulShards, MFReloaded|CompatVanilla, RedPowerWorld, BuildCraft|Builders, MFReloaded|CompatXyCraft, PowerConverters]
+2015-10-24 04:38:50 [INFO] Mr_Legacy005[/192.168.1.100:61664] logged in with entity id 349 at (232.5, 68.0, 247.5)
+2015-10-24 04:38:50 [SEVERE]  * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! *
+2015-10-24 04:38:50 [SEVERE] §4* ! * Bukkit version is not the recommended build for Essentials.
+2015-10-24 04:38:50 [SEVERE] §6* ! * You need atleast build 2882 of CraftBukkit, download it from http://dl.bukkit.org/downloads/craftbukkit/
+2015-10-24 04:38:50 [SEVERE]  * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! *
+2015-10-24 04:47:08 [INFO] Starting minecraft server version 1.4.7
+2015-10-24 04:47:15 [INFO] Loading properties
+2015-10-24 04:47:15 [INFO] Default game type: SURVIVAL
+2015-10-24 04:47:15 [INFO] Generating keypair
+2015-10-24 04:47:15 [INFO] Starting Minecraft server on 192.168.1.100:25565
+2015-10-24 04:47:18 [INFO] Preparing level "world"
+2015-10-24 04:47:19 [INFO] Preparing start region for level 0
+2015-10-24 04:47:19 [INFO] Done (0.855s)! For help, type "help" or "?"
+2015-10-24 04:47:20 [INFO] [PermissionsEx] sql backend registered!
+2015-10-24 04:47:20 [INFO] [PermissionsEx] file backend registered!
+2015-10-24 04:47:21 [INFO] [PermissionsEx] Initializing file backend
+2015-10-24 04:47:21 [INFO] [ClearLag] Loading modules...
+2015-10-24 04:47:21 [INFO] [ClearLag] Config not found. Generating default config...
+2015-10-24 04:47:21 [WARNING] [ClearLag] ARMOR_STAND is NOT a valid Entity!
+2015-10-24 04:47:21 [WARNING] [ClearLag] Horse is NOT a valid Entity!
+2015-10-24 04:47:21 [WARNING] [ClearLag] Horse is NOT a valid Entity!
+2015-10-24 04:47:21 [WARNING] [ClearLag] ARMOR_STAND is NOT a valid Entity!
+2015-10-24 04:47:21 [INFO] [ClearLag] Modules have been loaded!
+2015-10-24 04:47:21 [INFO] [ClearLag] Clearlag is now enabled!
+2015-10-24 04:47:21 [INFO] [ClearLag] Checking for updates...
+2015-10-24 04:47:22 [INFO] [Vault][Permission] PermissionsEx hooked.
+2015-10-24 04:47:22 [INFO] [Vault][Chat] PermissionsEx_Chat hooked.
+2015-10-24 04:47:22 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-10-24 04:47:22 [INFO] [AllPay] - Version 10.0 - hooked into Essentials Economy for Multiverse-Core v2.4-b527
+2015-10-24 04:47:22 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NETHER - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:47:22 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: THE_END - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:47:22 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NORMAL - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:47:22 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NORMAL - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:47:22 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:47:22 [INFO] [Multiverse-Core] 0 - World(s) loaded.
+2015-10-24 04:47:22 [WARNING] [Multiverse-Core] The world specified as the spawn world (0) did not exist!!
+2015-10-24 04:47:22 [INFO] [Multiverse-Portals] - Version 2.4-b548 Enabled - By Rigby and fernferret
+2015-10-24 04:47:22 [INFO] [Multiverse-Portals]  0 - Portals(s) loaded
+2015-10-24 04:47:22 [INFO] Bukkit version format changed. Version not checked.
+2015-10-24 04:47:22 [INFO] git-BukkitForge-1.4.5-R1.0-b3000 jnks (Really: BukkitForge for MC 1.4.7)
+2015-10-24 04:47:22 [INFO] 1.4.5-R0.2
+2015-10-24 04:47:22 [FINE] Aborting ItemSpawnBL read, itemDB not yet loaded.
+2015-10-24 04:47:22 [INFO] [Vault][Economy] Essentials Economy hooked.
+2015-10-24 04:47:22 [INFO] Essentials: Using PermissionsEx based permissions.
+2015-10-24 04:47:42 [INFO] [Vault][Economy] Essentials Economy unhooked.
+2015-10-24 04:47:42 [INFO] [Multiverse-Core] - Disabled
+2015-10-24 04:47:42 [INFO] [Vault][Permission] PermissionsEx un-hooked.
+2015-10-24 04:47:42 [INFO] [Vault][Chat] PermissionsEx_Chat un-hooked.
+2015-10-24 04:47:42 [INFO] [ClearLag] Nullifying module fields..
+2015-10-24 04:47:42 [INFO] [ClearLag] Clearlag is now disabled!
+2015-10-24 04:47:42 [INFO] [PermissionsEx] sql backend registered!
+2015-10-24 04:47:42 [INFO] [PermissionsEx] file backend registered!
+2015-10-24 04:47:42 [INFO] [PermissionsEx] Initializing file backend
+2015-10-24 04:47:42 [INFO] [ClearLag] Loading modules...
+2015-10-24 04:47:42 [WARNING] [ClearLag] ARMOR_STAND is NOT a valid Entity!
+2015-10-24 04:47:42 [WARNING] [ClearLag] Horse is NOT a valid Entity!
+2015-10-24 04:47:42 [WARNING] [ClearLag] Horse is NOT a valid Entity!
+2015-10-24 04:47:42 [WARNING] [ClearLag] ARMOR_STAND is NOT a valid Entity!
+2015-10-24 04:47:42 [INFO] [ClearLag] Modules have been loaded!
+2015-10-24 04:47:42 [INFO] [ClearLag] Clearlag is now enabled!
+2015-10-24 04:47:42 [INFO] [ClearLag] Checking for updates...
+2015-10-24 04:47:42 [INFO] [Vault][Permission] PermissionsEx hooked.
+2015-10-24 04:47:42 [INFO] [Vault][Chat] PermissionsEx_Chat hooked.
+2015-10-24 04:47:42 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-10-24 04:47:42 [INFO] [AllPay] - Version 10.0 - hooked into Essentials Economy for Multiverse-Core v2.4-b527
+2015-10-24 04:47:42 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NETHER - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:47:42 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: THE_END - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:47:42 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NORMAL - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:47:42 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NORMAL - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:47:42 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:47:42 [INFO] [Multiverse-Core] 0 - World(s) loaded.
+2015-10-24 04:47:42 [WARNING] [Multiverse-Core] The world specified as the spawn world (null) did not exist!!
+2015-10-24 04:47:42 [INFO] [Multiverse-Portals] - Version 2.4-b548 Enabled - By Rigby and fernferret
+2015-10-24 04:47:42 [INFO] [Multiverse-Portals]  0 - Portals(s) loaded
+2015-10-24 04:47:42 [INFO] Bukkit version format changed. Version not checked.
+2015-10-24 04:47:42 [INFO] git-BukkitForge-1.4.5-R1.0-b3000 jnks (Really: BukkitForge for MC 1.4.7)
+2015-10-24 04:47:42 [INFO] 1.4.5-R0.2
+2015-10-24 04:47:42 [FINE] Aborting ItemSpawnBL read, itemDB not yet loaded.
+2015-10-24 04:47:42 [INFO] [Vault][Economy] Essentials Economy hooked.
+2015-10-24 04:47:42 [INFO] Essentials: Using PermissionsEx based permissions.
+2015-10-24 04:47:48 [INFO] Unknown command. Try /help for a list of commands.
+2015-10-24 04:47:49 [INFO] Usage: /op <player>
+2015-10-24 04:48:43 [INFO] User Mr_Legacy005 connecting with mods [OCS, MFReloaded|CompatSufficientBiomes, factorization.misc, RedPowerWiring, OmniTools, BuildCraft|Transport, RedPowerCompat, AdvancedPowerManagement, WR-CBE|Core, MFReloaded|CompatIC2, factorization.dimensionalSlice, RedPowerLogic, ThermalExpansion|Energy, WR-CBE|RedPower, EnderStorage, AdvancedMachines, MFReloaded|CompatPams, mmmPowersuits, IronChest, MFReloaded|CompatRP2, BuildCraft|Energy, EE3, ImmibisCore, LogisticsPipes|Main, DimensionalDoors, ChickenChunks, factorization, RedPowerLighting, AppliedEnergistics, mod_bspkrsCore, RedPowerBase, MFReloaded|CompatExtraBiomes, MFReloaded, ThermalExpansion, NetherOres, weaponmod, BuildCraft|Silicon, APUnofficial, ThermalExpansion|Transport, BuildCraft|Core, IC2NuclearControl, ThermalExpansion|Factory, CompactSolars, MFReloaded|CompatForestry, DimensionalAnchors, IC2, StevesCarts, Mystcraft, WR-CBE|Addons, ComputerCraft, TreeCapitator, BuildCraft|Factory, RedPowerMachine, RedPowerCore, MFReloaded|CompatThaumcraft, CCTurtle, AdvancedRepulsionSystems, Tubestuff, RedPowerControl, MFReloaded|CompatTwilightForest, MFReloaded|CompatSoulShards, MFReloaded|CompatVanilla, RedPowerWorld, BuildCraft|Builders, MFReloaded|CompatXyCraft, PowerConverters]
+2015-10-24 04:48:43 [INFO] Mr_Legacy005[/192.168.1.100:61859] logged in with entity id 356 at (224.6065962084244, 79.15382160051675, 250.44186205423574)
+2015-10-24 04:48:43 [SEVERE]  * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! *
+2015-10-24 04:48:43 [SEVERE] §4* ! * Bukkit version is not the recommended build for Essentials.
+2015-10-24 04:48:43 [SEVERE] §6* ! * You need atleast build 2882 of CraftBukkit, download it from http://dl.bukkit.org/downloads/craftbukkit/
+2015-10-24 04:48:43 [SEVERE]  * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! *
+2015-10-24 04:48:53 [INFO] <§4Mr_Legacy005§r> test
+2015-10-24 04:48:57 [INFO] [Vault][Economy] Essentials Economy unhooked.
+2015-10-24 04:48:57 [INFO] [Multiverse-Core] - Disabled
+2015-10-24 04:48:57 [INFO] [Vault][Permission] PermissionsEx un-hooked.
+2015-10-24 04:48:57 [INFO] [Vault][Chat] PermissionsEx_Chat un-hooked.
+2015-10-24 04:48:57 [INFO] [ClearLag] Nullifying module fields..
+2015-10-24 04:48:57 [INFO] [ClearLag] Clearlag is now disabled!
+2015-10-24 04:48:57 [INFO] [PermissionsEx] sql backend registered!
+2015-10-24 04:48:57 [INFO] [PermissionsEx] file backend registered!
+2015-10-24 04:48:57 [INFO] [PermissionsEx] Initializing file backend
+2015-10-24 04:48:57 [INFO] [ClearLag] Loading modules...
+2015-10-24 04:48:57 [WARNING] [ClearLag] ARMOR_STAND is NOT a valid Entity!
+2015-10-24 04:48:57 [WARNING] [ClearLag] Horse is NOT a valid Entity!
+2015-10-24 04:48:57 [WARNING] [ClearLag] Horse is NOT a valid Entity!
+2015-10-24 04:48:57 [WARNING] [ClearLag] ARMOR_STAND is NOT a valid Entity!
+2015-10-24 04:48:57 [INFO] [ClearLag] Modules have been loaded!
+2015-10-24 04:48:57 [INFO] [ClearLag] Clearlag is now enabled!
+2015-10-24 04:48:57 [INFO] [ClearLag] Checking for updates...
+2015-10-24 04:48:57 [INFO] [Vault][Permission] PermissionsEx hooked.
+2015-10-24 04:48:57 [INFO] [Vault][Chat] PermissionsEx_Chat hooked.
+2015-10-24 04:48:57 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-10-24 04:48:57 [INFO] [AllPay] - Version 10.0 - hooked into Essentials Economy for Multiverse-Core v2.4-b527
+2015-10-24 04:48:58 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NETHER - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:48:58 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: THE_END - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:48:58 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NORMAL - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:48:58 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NORMAL - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:48:58 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:48:58 [INFO] [Multiverse-Core] 0 - World(s) loaded.
+2015-10-24 04:48:58 [WARNING] [Multiverse-Core] The world specified as the spawn world (null) did not exist!!
+2015-10-24 04:48:58 [INFO] [Multiverse-Portals] - Version 2.4-b548 Enabled - By Rigby and fernferret
+2015-10-24 04:48:58 [INFO] [Multiverse-Portals]  0 - Portals(s) loaded
+2015-10-24 04:48:58 [INFO] Bukkit version format changed. Version not checked.
+2015-10-24 04:48:58 [INFO] git-BukkitForge-1.4.5-R1.0-b3000 jnks (Really: BukkitForge for MC 1.4.7)
+2015-10-24 04:48:58 [INFO] 1.4.5-R0.2
+2015-10-24 04:48:58 [FINE] Aborting ItemSpawnBL read, itemDB not yet loaded.
+2015-10-24 04:48:58 [INFO] [Vault][Economy] Essentials Economy hooked.
+2015-10-24 04:48:58 [INFO] Essentials: Using PermissionsEx based permissions.
+2015-10-24 04:49:01 [INFO] <§4Mr_Legacy005§r> t
+2015-10-24 04:49:03 [INFO] <§4[DEVELOPER] §6§4Mr_Legacy005§r> ttt
+2015-10-24 04:49:06 [INFO] <§4[DEVELOPER] §6§4Mr_Legacy005§r> t
+2015-10-24 04:49:08 [INFO] <§4[DEVELOPER] §6§4Mr_Legacy005§r> test
+2015-10-24 04:51:54 [INFO] Starting minecraft server version 1.4.7
+2015-10-24 04:52:02 [INFO] Loading properties
+2015-10-24 04:52:02 [INFO] Default game type: SURVIVAL
+2015-10-24 04:52:02 [INFO] Generating keypair
+2015-10-24 04:52:02 [INFO] Starting Minecraft server on 192.168.1.100:25565
+2015-10-24 04:52:06 [INFO] Preparing level "world"
+2015-10-24 04:52:06 [INFO] Preparing start region for level 0
+2015-10-24 04:52:07 [INFO] Done (0.969s)! For help, type "help" or "?"
+2015-10-24 04:52:08 [INFO] [PermissionsEx] sql backend registered!
+2015-10-24 04:52:08 [INFO] [PermissionsEx] file backend registered!
+2015-10-24 04:52:08 [INFO] [PermissionsEx] Initializing file backend
+2015-10-24 04:52:08 [INFO] [ClearLag] Loading modules...
+2015-10-24 04:52:08 [WARNING] [ClearLag] ARMOR_STAND is NOT a valid Entity!
+2015-10-24 04:52:08 [WARNING] [ClearLag] Horse is NOT a valid Entity!
+2015-10-24 04:52:08 [WARNING] [ClearLag] Horse is NOT a valid Entity!
+2015-10-24 04:52:08 [WARNING] [ClearLag] ARMOR_STAND is NOT a valid Entity!
+2015-10-24 04:52:08 [INFO] [ClearLag] Modules have been loaded!
+2015-10-24 04:52:08 [INFO] [ClearLag] Clearlag is now enabled!
+2015-10-24 04:52:08 [INFO] [ClearLag] Checking for updates...
+2015-10-24 04:52:09 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-10-24 04:52:09 [INFO] [AllPay] - Version 10.0 - hooked into Essentials Economy for Multiverse-Core v2.4-b527
+2015-10-24 04:52:09 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NETHER - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:52:09 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: THE_END - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:52:09 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NORMAL - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:52:09 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NORMAL - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 04:52:09 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 04:52:09 [INFO] [Multiverse-Core] 0 - World(s) loaded.
+2015-10-24 04:52:09 [WARNING] [Multiverse-Core] The world specified as the spawn world (null) did not exist!!
+2015-10-24 04:52:09 [INFO] [Multiverse-Portals] - Version 2.4-b548 Enabled - By Rigby and fernferret
+2015-10-24 04:52:09 [INFO] [Multiverse-Portals]  0 - Portals(s) loaded
+2015-10-24 04:52:09 [INFO] Bukkit version format changed. Version not checked.
+2015-10-24 04:52:09 [INFO] git-BukkitForge-1.4.5-R1.0-b3000 jnks (Really: BukkitForge for MC 1.4.7)
+2015-10-24 04:52:09 [INFO] 1.4.5-R0.2
+2015-10-24 04:52:09 [FINE] Aborting ItemSpawnBL read, itemDB not yet loaded.
+2015-10-24 04:52:10 [INFO] Essentials: Using PermissionsEx based permissions.
+2015-10-24 04:52:25 [INFO] --- Showing help page 1 of 51 (/help <page>) ---
+2015-10-24 04:52:25 [INFO] /.s [args...]
+2015-10-24 04:52:25 [INFO] // [on|off]
+2015-10-24 04:52:25 [INFO] /bukkitforge help
+2015-10-24 04:52:25 [INFO] //center <block>
+2015-10-24 04:52:25 [INFO] //chunk [x,z coordinates]
+2015-10-24 04:52:25 [INFO] //clearhistory 
+2015-10-24 04:52:25 [INFO] //contract <amount> [reverse-amount] [direction]
+2015-10-24 04:52:33 [INFO] Unknown command. Try /help for a list of commands.
+2015-10-24 04:52:37 [INFO] --- Showing help page 1 of 51 (/help <page>) ---
+2015-10-24 04:52:37 [INFO] /.s [args...]
+2015-10-24 04:52:37 [INFO] // [on|off]
+2015-10-24 04:52:37 [INFO] /bukkitforge help
+2015-10-24 04:52:37 [INFO] //center <block>
+2015-10-24 04:52:37 [INFO] //chunk [x,z coordinates]
+2015-10-24 04:52:37 [INFO] //clearhistory 
+2015-10-24 04:52:37 [INFO] //contract <amount> [reverse-amount] [direction]
+2015-10-24 04:52:39 [INFO] --- Showing help page 2 of 51 (/help <page>) ---
+2015-10-24 04:52:39 [INFO] //copy 
+2015-10-24 04:52:39 [INFO] //count <block>
+2015-10-24 04:52:39 [INFO] //curve <block> [thickness]
+2015-10-24 04:52:39 [INFO] //cut [leave-id]
+2015-10-24 04:52:39 [INFO] //cyl <block> <radius>[,<radius>] [height]
+2015-10-24 04:52:39 [INFO] //deform <expression>
+2015-10-24 04:52:39 [INFO] //desel 
+2015-10-24 04:52:41 [INFO] --- Showing help page 3 of 51 (/help <page>) ---
+2015-10-24 04:52:41 [INFO] //distr 
+2015-10-24 04:52:41 [INFO] //drain <radius>
+2015-10-24 04:52:41 [INFO] //ex [radius]
+2015-10-24 04:52:41 [INFO] //expand <amount> [reverse-amount] <direction>
+2015-10-24 04:52:41 [INFO] //faces <block>
+2015-10-24 04:52:41 [INFO] //fast [on|off]
+2015-10-24 04:52:41 [INFO] //fill <block> <radius> [depth]
+2015-10-24 04:52:47 [INFO] User Mr_Legacy005 connecting with mods [MFReloaded|CompatSufficientBiomes, OCS, factorization.misc, RedPowerWiring, OmniTools, BuildCraft|Transport, AdvancedPowerManagement, RedPowerCompat, WR-CBE|Core, MFReloaded|CompatIC2, RedPowerLogic, factorization.dimensionalSlice, ThermalExpansion|Energy, WR-CBE|RedPower, EnderStorage, AdvancedMachines, MFReloaded|CompatPams, mmmPowersuits, IronChest, MFReloaded|CompatRP2, BuildCraft|Energy, EE3, ImmibisCore, LogisticsPipes|Main, DimensionalDoors, ChickenChunks, factorization, RedPowerLighting, AppliedEnergistics, mod_bspkrsCore, RedPowerBase, MFReloaded|CompatExtraBiomes, MFReloaded, ThermalExpansion, NetherOres, BuildCraft|Silicon, weaponmod, APUnofficial, ThermalExpansion|Transport, IC2NuclearControl, BuildCraft|Core, ThermalExpansion|Factory, CompactSolars, DimensionalAnchors, MFReloaded|CompatForestry, IC2, StevesCarts, Mystcraft, WR-CBE|Addons, ComputerCraft, TreeCapitator, BuildCraft|Factory, RedPowerMachine, RedPowerCore, MFReloaded|CompatThaumcraft, AdvancedRepulsionSystems, CCTurtle, Tubestuff, RedPowerControl, MFReloaded|CompatTwilightForest, MFReloaded|CompatSoulShards, MFReloaded|CompatVanilla, BuildCraft|Builders, RedPowerWorld, MFReloaded|CompatXyCraft, PowerConverters]
+2015-10-24 04:52:47 [INFO] Mr_Legacy005[/192.168.1.100:61891] logged in with entity id 351 at (222.54555734345516, 79.15382160051675, 252.4077756515788)
+2015-10-24 04:52:47 [SEVERE]  * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! *
+2015-10-24 04:52:47 [SEVERE] §4* ! * Bukkit version is not the recommended build for Essentials.
+2015-10-24 04:52:47 [SEVERE] §6* ! * You need atleast build 2882 of CraftBukkit, download it from http://dl.bukkit.org/downloads/craftbukkit/
+2015-10-24 04:52:47 [SEVERE]  * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! *
+2015-10-24 05:00:42 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2015-10-24 05:01:04 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2015-10-24 05:01:25 [SEVERE] Encountered an unexpected exception RuntimeException
+java.lang.RuntimeException: Error while saving login times
+	at cpw.mods.fml.server.FMLServerHandler.haltGame(FMLServerHandler.java:102)
+	at cpw.mods.fml.common.FMLCommonHandler.raiseException(FMLCommonHandler.java:196)
+	at codechicken.chunkloader.ChunkLoaderManager.updateLoginTimes(ChunkLoaderManager.java:882)
+	at codechicken.chunkloader.ChunkLoaderManager.tickEnd(ChunkLoaderManager.java:850)
+	at codechicken.chunkloader.ChunkLoaderEventHandler.tickEnd(ChunkLoaderEventHandler.java:39)
+	at cpw.mods.fml.common.SingleIntervalHandler.tickEnd(SingleIntervalHandler.java:22)
+	at cpw.mods.fml.common.FMLCommonHandler.tickEnd(FMLCommonHandler.java:139)
+	at cpw.mods.fml.common.FMLCommonHandler.onPostWorldTick(FMLCommonHandler.java:283)
+	at net.minecraft.server.MinecraftServer.r(MinecraftServer.java:689)
+	at ho.r(DedicatedServer.java:269)
+	at net.minecraft.server.MinecraftServer.q(MinecraftServer.java:599)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:497)
+	at fy.run(SourceFile:849)
+Caused by: java.io.FileNotFoundException: .\world\chickenchunks\loginTimes.dat (The requested operation cannot be performed on a file with a user-mapped section open)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at codechicken.chunkloader.ChunkLoaderManager.updateLoginTimes(ChunkLoaderManager.java:871)
+	... 10 more
+2015-10-24 05:01:25 [SEVERE] This crash report has been saved to: C:\Users\seth\Desktop\test server\.\crash-reports\crash-2015-10-24_05.01.25-server.txt
+2015-10-24 05:02:53 [INFO] Starting minecraft server version 1.4.7
+2015-10-24 05:03:00 [INFO] Loading properties
+2015-10-24 05:03:00 [INFO] Default game type: SURVIVAL
+2015-10-24 05:03:00 [INFO] Generating keypair
+2015-10-24 05:03:01 [INFO] Starting Minecraft server on 192.168.1.100:25565
+2015-10-24 05:03:04 [INFO] Preparing level "world"
+2015-10-24 05:03:05 [INFO] Preparing start region for level 0
+2015-10-24 05:03:05 [INFO] Done (0.940s)! For help, type "help" or "?"
+2015-10-24 05:03:06 [INFO] [PermissionsEx] sql backend registered!
+2015-10-24 05:03:06 [INFO] [PermissionsEx] file backend registered!
+2015-10-24 05:03:06 [INFO] [PermissionsEx] Initializing file backend
+2015-10-24 05:03:07 [INFO] [ClearLag] Loading modules...
+2015-10-24 05:03:07 [WARNING] [ClearLag] ARMOR_STAND is NOT a valid Entity!
+2015-10-24 05:03:07 [WARNING] [ClearLag] Horse is NOT a valid Entity!
+2015-10-24 05:03:07 [WARNING] [ClearLag] Horse is NOT a valid Entity!
+2015-10-24 05:03:07 [WARNING] [ClearLag] ARMOR_STAND is NOT a valid Entity!
+2015-10-24 05:03:07 [INFO] [ClearLag] Modules have been loaded!
+2015-10-24 05:03:07 [INFO] [ClearLag] Clearlag is now enabled!
+2015-10-24 05:03:07 [INFO] [ClearLag] Checking for updates...
+2015-10-24 05:03:07 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-10-24 05:03:08 [INFO] [AllPay] - Version 10.0 - hooked into Essentials Economy for Multiverse-Core v2.4-b527
+2015-10-24 05:03:08 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NETHER - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 05:03:08 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: THE_END - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 05:03:08 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NORMAL - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 05:03:08 [INFO] [Multiverse-Core] Loading World & Settings - '0' - Env: NORMAL - Type: NORMAL & seed: -2475674854004474993
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] The world '0' could NOT be loaded because it contains errors!
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] Try using Chukster to repair your world! '0'
+2015-10-24 05:03:08 [SEVERE] [Multiverse-Core] http://forums.bukkit.org/threads/admin-chunkster.8186/
+2015-10-24 05:03:08 [INFO] [Multiverse-Core] 0 - World(s) loaded.
+2015-10-24 05:03:08 [WARNING] [Multiverse-Core] The world specified as the spawn world (null) did not exist!!
+2015-10-24 05:03:08 [INFO] [Multiverse-Portals] - Version 2.4-b548 Enabled - By Rigby and fernferret
+2015-10-24 05:03:08 [INFO] [Multiverse-Portals]  0 - Portals(s) loaded
+2015-10-24 05:03:08 [INFO] Bukkit version format changed. Version not checked.
+2015-10-24 05:03:08 [INFO] git-BukkitForge-1.4.5-R1.0-b3000 jnks (Really: BukkitForge for MC 1.4.7)
+2015-10-24 05:03:08 [INFO] 1.4.5-R0.2
+2015-10-24 05:03:08 [FINE] Aborting ItemSpawnBL read, itemDB not yet loaded.
+2015-10-24 05:03:08 [INFO] Essentials: Using PermissionsEx based permissions.
+2015-10-24 05:03:18 [INFO] User Mr_Legacy005 connecting with mods [MFReloaded|CompatSufficientBiomes, OCS, factorization.misc, RedPowerWiring, OmniTools, BuildCraft|Transport, AdvancedPowerManagement, RedPowerCompat, WR-CBE|Core, MFReloaded|CompatIC2, RedPowerLogic, factorization.dimensionalSlice, ThermalExpansion|Energy, WR-CBE|RedPower, EnderStorage, AdvancedMachines, MFReloaded|CompatPams, mmmPowersuits, IronChest, MFReloaded|CompatRP2, BuildCraft|Energy, ImmibisCore, EE3, LogisticsPipes|Main, DimensionalDoors, ChickenChunks, factorization, RedPowerLighting, AppliedEnergistics, mod_bspkrsCore, RedPowerBase, MFReloaded|CompatExtraBiomes, MFReloaded, ThermalExpansion, NetherOres, APUnofficial, BuildCraft|Silicon, weaponmod, ThermalExpansion|Transport, IC2NuclearControl, BuildCraft|Core, ThermalExpansion|Factory, CompactSolars, MFReloaded|CompatForestry, DimensionalAnchors, IC2, StevesCarts, Mystcraft, WR-CBE|Addons, ComputerCraft, TreeCapitator, BuildCraft|Factory, RedPowerMachine, RedPowerCore, MFReloaded|CompatThaumcraft, CCTurtle, AdvancedRepulsionSystems, Tubestuff, RedPowerControl, MFReloaded|CompatTwilightForest, MFReloaded|CompatSoulShards, MFReloaded|CompatVanilla, BuildCraft|Builders, RedPowerWorld, MFReloaded|CompatXyCraft, PowerConverters]
+2015-10-24 05:03:18 [INFO] Mr_Legacy005[/192.168.1.100:61918] logged in with entity id 326 at (123.05939465431968, 67.1632694397648, 176.6540158037221)
+2015-10-24 05:03:18 [SEVERE]  * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! *
+2015-10-24 05:03:18 [SEVERE] §4* ! * Bukkit version is not the recommended build for Essentials.
+2015-10-24 05:03:18 [SEVERE] §6* ! * You need atleast build 2882 of CraftBukkit, download it from http://dl.bukkit.org/downloads/craftbukkit/
+2015-10-24 05:03:18 [SEVERE]  * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! * ! *
+2015-10-24 05:05:28 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2015-10-24 05:05:35 [INFO] Mr_Legacy005 lost connection: disconnect.quitting
+2015-10-24 05:05:38 [INFO] [Multiverse-Core] - Disabled
+2015-10-24 05:05:38 [INFO] [ClearLag] Nullifying module fields..
+2015-10-24 05:05:38 [INFO] [ClearLag] Clearlag is now disabled!
+2015-10-24 05:05:38 [INFO] Stopping the server
+2015-10-24 05:05:38 [INFO] Stopping server
+2015-10-24 05:05:38 [INFO] Saving players
+2015-10-24 05:05:38 [INFO] Saving worlds
+2015-10-24 05:05:38 [INFO] Saving chunks for level 'world'/Overworld
+2015-10-24 05:05:38 [INFO] Saving chunks for level 'world'/Nether
+2015-10-24 05:05:38 [INFO] Stopping server
+2015-10-24 05:07:27 [INFO] Starting minecraft server version 1.4.7
+2015-10-24 05:07:33 [INFO] Loading properties
+2015-10-24 05:07:33 [INFO] Default game type: SURVIVAL
+2015-10-24 05:07:33 [INFO] Generating keypair
+2015-10-24 05:07:34 [INFO] Starting Minecraft server on 192.168.1.100:25565
+2015-10-24 05:07:37 [INFO] Preparing level "world"
+2015-10-24 05:07:38 [INFO] Preparing start region for level 0
+2015-10-24 05:07:39 [INFO] Preparing spawn area: 7%
+2015-10-24 05:07:40 [INFO] Preparing spawn area: 14%
+2015-10-24 05:07:41 [INFO] Preparing spawn area: 21%
+2015-10-24 05:07:42 [INFO] Preparing spawn area: 26%
+2015-10-24 05:07:43 [INFO] Preparing spawn area: 31%
+2015-10-24 05:07:44 [INFO] Preparing spawn area: 36%
+2015-10-24 05:07:45 [INFO] Preparing spawn area: 41%
+2015-10-24 05:07:46 [INFO] Preparing spawn area: 46%
+2015-10-24 05:07:47 [INFO] Preparing spawn area: 52%
+2015-10-24 05:07:48 [INFO] Preparing spawn area: 58%
+2015-10-24 05:07:49 [INFO] Preparing spawn area: 63%
+2015-10-24 05:07:50 [INFO] Preparing spawn area: 69%
+2015-10-24 05:07:51 [INFO] Preparing spawn area: 76%
+2015-10-24 05:07:52 [INFO] Preparing spawn area: 82%
+2015-10-24 05:07:53 [INFO] Preparing spawn area: 88%
+2015-10-24 05:07:54 [INFO] Preparing spawn area: 94%
+2015-10-24 05:07:55 [INFO] Done (18.124s)! For help, type "help" or "?"
+2015-10-24 05:07:56 [INFO] [PermissionsEx] sql backend registered!
+2015-10-24 05:07:56 [INFO] [PermissionsEx] file backend registered!
+2015-10-24 05:07:56 [INFO] [PermissionsEx] Initializing file backend
+2015-10-24 05:07:56 [INFO] Bukkit version format changed. Version not checked.
+2015-10-24 05:07:56 [INFO] git-BukkitForge-1.4.5-R1.0-b3000 jnks (Really: BukkitForge for MC 1.4.7)
+2015-10-24 05:07:56 [INFO] 1.4.5-R0.2
+2015-10-24 05:07:57 [FINE] Aborting ItemSpawnBL read, itemDB not yet loaded.
+2015-10-24 05:07:57 [INFO] Essentials: Using PermissionsEx based permissions.
