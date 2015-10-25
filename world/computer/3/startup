@@ -1,0 +1,6 @@
+m = peripheral.wrap("right")
+
+m.setTextScale(5)
+m.setCursorPos(1,1)
+m.setTextColour(2)
+m.write("Reborn Phoenix Gaming")
